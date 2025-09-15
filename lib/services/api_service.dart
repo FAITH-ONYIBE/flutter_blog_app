@@ -8,6 +8,9 @@ class ApiService {
   static Future<List<Post>> fetchPosts() async {
     final response = await http.get(Uri.parse('$baseUrl/posts'));
 
+    print("Response status: ${response.statusCode}");
+    print("Response body: ${response}");
+
     if (response.statusCode == 200) {
       List<dynamic> body = jsonDecode(response.body);
       return body.map((json) => Post.fromJson(json)).toList();

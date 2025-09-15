@@ -22,10 +22,14 @@ class OnboardingScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(20),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Spacer(),
-                const Text(
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(height: 150,),
+                    const Text(
                   "Novo caminho",
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
@@ -38,8 +42,11 @@ class OnboardingScreen extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
+                  ],
 
-                const Spacer(),
+                ),
+
+             
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
@@ -77,6 +84,7 @@ class OnboardingScreen extends StatelessWidget {
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
+                    SizedBox(height: 50,)
                   ],
                 ),
               ],

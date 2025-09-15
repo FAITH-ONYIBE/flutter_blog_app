@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
             return ListView(
               padding: const EdgeInsets.only(bottom: 16),
               children: [
-                // Header text
+           
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20, 18, 20, 8),
                   child: Column(
@@ -91,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                 ),
-                // Horizontally scrollable featured images
+              
                 SizedBox(
                   height: 190,
                   child: ListView(
